@@ -1,0 +1,54 @@
+{
+  "name": "oxlint-plugin-cognitive-complexity",
+  "version": "0.1.0",
+  "description": "Oxlint plugin that reports JavaScript and TypeScript functions with high cognitive complexity.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IchenDEV/oxlint-plugin-cognitive-complexity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IchenDEV/oxlint-plugin-cognitive-complexity/issues"
+  },
+  "homepage": "https://github.com/IchenDEV/oxlint-plugin-cognitive-complexity#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "lint:fixture": "oxlint --config ./fixtures/oxlint.config.json fixtures/valid.js",
+    "lint:fixture:invalid": "oxlint --config ./fixtures/oxlint.config.json fixtures/invalid.js",
+    "verify": "pnpm test && pnpm run lint:fixture && npm pack --dry-run"
+  },
+  "dependencies": {
+    "@oxlint/plugins": "^1.73.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.63.0",
+    "oxlint": "^1.73.0",
+    "vitest": "^4.0.15"
+  },
+  "keywords": [
+    "oxlint",
+    "oxlint-plugin",
+    "linter",
+    "javascript",
+    "typescript",
+    "cognitive-complexity",
+    "complexity",
+    "oxc"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

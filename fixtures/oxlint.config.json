@@ -1,0 +1,16 @@
+{
+  "jsPlugins": [
+    {
+      "name": "cognitive-complexity",
+      "specifier": "../index.js"
+    }
+  ],
+  "rules": {
+    "cognitive-complexity/max-cognitive-complexity": [
+      "error",
+      {
+        "max": 3
+      }
+    ]
+  }
+}
