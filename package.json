@@ -31,7 +31,7 @@
     "verify": "pnpm test && pnpm run lint:fixture && npm pack --dry-run"
   },
   "dependencies": {
-    "@oxlint/plugins": "^1.73.0"
+    "@oxlint/plugins": "^1.85.0"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.63.0",
